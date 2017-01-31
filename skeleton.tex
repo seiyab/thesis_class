@@ -1,0 +1,37 @@
+\documentclass{thesis}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{enumerate}
+
+\begin{document}
+\begin{jabst}
+    ここは、概要です。
+\end{jabst}
+\begin{eabst}
+    Here is abstruct.
+\end{eabst}
+
+\frontmatter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\chapter{本文}
+本文を書きます。
+
+\begin{thebibliography}{} %reference
+ \bibitem{PRML}
+\end{thebibliography}
+%\bibliographystyle{ieeetr}% to use bibtex
+%\bibliography{reference.bib}
+
+\newpage
+\section*{国際会議論文}
+\begin{enumerate}[{1)}]
+    \item NIPS
+\end{enumerate}
+
+\appendix
+%\chapter{}
+\end{document}
