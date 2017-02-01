@@ -26,7 +26,7 @@
     {\newpage}
 
 \def\@makechapterhead#1{
-    \vspace*{2\Cvs}
+    \vspace*{1\Cvs}
     {\parindent \z@ \raggedright \normalfont
         \ifnum \c@secnumdepth >\m@ne
             \if@mainmatter
@@ -37,11 +37,11 @@
         \fi
     \interlinepenalty\@M
     \LARGE \headfont #1\par\nobreak
-    \vskip 1\Cvs}}
+    \vskip 2\Cvs}}
 
 \def\@makeschapterhead#1{
-    \vspace*{2\Cvs}
+    \vspace*{1\Cvs}
     {\parindent \z@ \raggedright \normalfont
     \interlinepenalty\@M
     \LARGE \headfont #1\par\nobreak
-    \vskip 1\Cvs}}
+    \vskip 2\Cvs}}
