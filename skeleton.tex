@@ -3,35 +3,37 @@
 \usepackage{enumerate}
 
 \begin{document}
-\begin{jabst}
+\begin{jabst} %----- Japanese abstruct -----
     ここは、概要です。
 \end{jabst}
-\begin{eabst}
+\begin{eabst} %----- English abstruct -----
     Here is abstruct.
 \end{eabst}
-
 \frontmatter
+\tableofcontents %-- table of contents
+\listoffigures %-- list of figures
+\listoftables %-- list of tables
 
-\tableofcontents
-\listoffigures
-\listoftables
+\mainmatter %----- Main contents -----
+\chapter{序論}
+thesis.clsは、修士論文用に非公式に製作されたクラスファイルです。
 
-\mainmatter
-\chapter{本文}
-本文を書きます。
+\chapter{結論}
+skeleton.texは、thesis.clsの使い方のテンプレートです。
 
-\begin{thebibliography}{} %reference
+\begin{thebibliography}{} %-----reference -----
  \bibitem{PRML}
 \end{thebibliography}
-%\bibliographystyle{ieeetr}% to use bibtex
+%\bibliographystyle{ieeetr}% uncomment to use bibtex
 %\bibliography{reference.bib}
 
 \newpage
 \section*{国際会議論文}
 \begin{enumerate}[{1)}]
-    \item NIPS
+    \item HOGE 2017
+    \item PIYO 2017
 \end{enumerate}
 
-\appendix
+\appendix %----- Appendix -----
 %\chapter{}
 \end{document}

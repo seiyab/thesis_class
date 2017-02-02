@@ -6,6 +6,8 @@
 
 \addtolength{\hoffset}{1.5cm}
 \addtolength{\textwidth}{-1.5cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\topskip}{1cm}
 
 \newenvironment{jabst}
     {
@@ -36,12 +38,28 @@
             \fi
         \fi
     \interlinepenalty\@M
-    \LARGE \headfont #1\par\nobreak
-    \vskip 2\Cvs}}
+    \huge \headfont #1\par\nobreak
+    \vskip 2\Cvs}
+    \thispagestyle{myheadings}
+}
 
 \def\@makeschapterhead#1{
     \vspace*{1\Cvs}
     {\parindent \z@ \raggedright \normalfont
     \interlinepenalty\@M
-    \LARGE \headfont #1\par\nobreak
-    \vskip 2\Cvs}}
+    \huge \headfont #1\par\nobreak
+    \vskip 2\Cvs}
+    \thispagestyle{myheadings}
+}
+
+\def\ps@myheadings{%
+  \let\@oddfoot\@empty\let\@evenfoot\@empty
+  \def\@evenhead{%
+    \hbox to \fullwidth{\rightmark\hfil\thepage\hskip 2\Cvs}\hss}%
+  \def\@oddhead{%
+    \hbox to \fullwidth{\rightmark\hfil\thepage\hskip 2\Cvs}\hss}%
+  \let\@mkboth\@gobbletwo
+  \let\chaptermark\@gobble
+  \let\sectionmark\@gobble
+}
+\pagestyle{myheadings}
