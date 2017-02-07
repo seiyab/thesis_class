@@ -11,23 +11,12 @@
 \addtolength{\headsep}{1truecm}
 \addtolength{\textheight}{-0.5truecm}
 
-\newenvironment{jabst}
-    {
+\renewenvironment{abstract}[1]{
         \newpage
         \thispagestyle{empty}%
-        \begin{center}\textbf{\Large 概要}\end{center}
+        \begin{center}\textbf{\Large #1}\end{center}
 
-    }
-
-    {\newpage}
-\newenvironment{eabst}
-    {
-        \newpage
-        \thispagestyle{empty}%
-        \begin{center}\textbf{\Large Abstract}\end{center}
-
-    }
-    {\newpage}
+}{\newpage}
 
 \def\@makechapterhead#1{
     \vspace*{0.5\Cvs}
