@@ -1,5 +1,5 @@
 \ProvidesClass{thesis}
-  [2017/02/02 seiyab]
+  [2017/02/07 seiyab]
 \LoadClass[11pt,report]{jsbook}
 
 \setcounter{tocdepth}{2}
@@ -9,7 +9,7 @@
 \setlength{\fullwidth}{\textwidth}
 \addtolength{\topmargin}{-1truecm}
 \addtolength{\headsep}{1truecm}
-\addtolength{\textheight}{\topskip}
+\addtolength{\textheight}{-0.5truecm}
 
 \newenvironment{jabst}
     {
@@ -30,11 +30,11 @@
     {\newpage}
 
 \def\@makechapterhead#1{
-    \vspace*{1\Cvs}
+    \vspace*{0.5\Cvs}
     {\parindent \z@ \raggedright \normalfont
         \ifnum \c@secnumdepth >\m@ne
             \if@mainmatter
-                \Large\headfont \@chapapp\thechapter\@chappos
+                \LARGE\headfont \@chapapp\thechapter\@chappos
                 \par\nobreak
                 \vskip \Cvs
             \fi
@@ -45,7 +45,7 @@
 }
 
 \def\@makeschapterhead#1{
-    \vspace*{1\Cvs}
+    \vspace*{0.5\Cvs}
     {\parindent \z@ \raggedright \normalfont
     \interlinepenalty\@M
     \huge \headfont #1\par\nobreak
