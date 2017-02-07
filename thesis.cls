@@ -24,7 +24,7 @@
     {
         \newpage
         \thispagestyle{empty}%
-        \begin{center}\textbf{\Large Abstruct}\end{center}
+        \begin{center}\textbf{\Large Abstract}\end{center}
 
     }
     {\newpage}
