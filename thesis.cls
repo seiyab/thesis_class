@@ -12,11 +12,10 @@
 \addtolength{\textheight}{-0.5truecm}
 
 \renewenvironment{abstract}[1]{
-        \newpage
-        \thispagestyle{empty}%
+        \newpage \pagestyle{empty}
         \begin{center}\textbf{\Large #1}\end{center}
 
-}{\newpage}
+}{\newpage \pagestyle{myheadings}}
 
 \def\@makechapterhead#1{
     \vspace*{0.5\Cvs}
